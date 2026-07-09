@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Outside Lovable builds (e.g. Netlify CI), target the Netlify preset instead
+  // of the default Cloudflare one so the SSR handler deploys as a Netlify Function.
+  nitro: process.env.NETLIFY ? { preset: "netlify" } : undefined,
 });
