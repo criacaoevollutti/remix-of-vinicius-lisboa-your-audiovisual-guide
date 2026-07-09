@@ -21,7 +21,9 @@ export function About() {
           </div>
         </div>
         <div>
-          <span className="text-xs uppercase tracking-[0.3em] text-brand-orange">{about.eyebrow}</span>
+          <span className="text-xs uppercase tracking-[0.3em] text-brand-orange">
+            {about.eyebrow}
+          </span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">{about.name}</h2>
           <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
             <p>{about.paragraphs[0]}</p>
@@ -34,7 +36,8 @@ export function About() {
               ))}
             </ul>
             <p>
-              O <strong className="text-brand-orange">Comandando o S-Log</strong> {about.paragraphs[4].replace("O Comandando o S-Log ", "")}
+              O <strong className="text-brand-orange">Comandando o S-Log</strong>{" "}
+              {about.paragraphs[4].replace("O Comandando o S-Log ", "")}
             </p>
             <p>{about.paragraphs[5]}</p>
           </div>

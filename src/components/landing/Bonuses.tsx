@@ -15,7 +15,9 @@ export function Bonuses() {
       <div className="absolute inset-0 bg-hero opacity-30 pointer-events-none" />
       <div className="relative max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="text-xs uppercase tracking-[0.3em] text-brand-orange">{bonuses.eyebrow}</span>
+          <span className="text-xs uppercase tracking-[0.3em] text-brand-orange">
+            {bonuses.eyebrow}
+          </span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">{bonuses.title}</h2>
           <p className="mt-4 text-muted-foreground">{bonuses.description}</p>
         </div>
@@ -32,7 +34,9 @@ export function Bonuses() {
                     : "border-border bg-card/60 hover:border-primary/40")
                 }
               >
-                {b.highlight && <div className="absolute -top-10 -right-10 w-40 h-40 bg-orange-gradient opacity-20 blur-2xl" />}
+                {b.highlight && (
+                  <div className="absolute -top-10 -right-10 w-40 h-40 bg-orange-gradient opacity-20 blur-2xl" />
+                )}
                 <div
                   className={
                     "w-14 h-14 rounded-xl grid place-items-center shrink-0 mb-5 " +

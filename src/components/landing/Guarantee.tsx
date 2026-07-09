@@ -16,7 +16,9 @@ export function Guarantee() {
               <div className="text-center">
                 <ShieldCheck size={36} strokeWidth={1.5} className="mx-auto" />
                 <div className="text-5xl font-extrabold leading-none mt-1">{guarantee.days}</div>
-                <div className="text-xs uppercase tracking-widest mt-1 opacity-90">{guarantee.labels.days}</div>
+                <div className="text-xs uppercase tracking-widest mt-1 opacity-90">
+                  {guarantee.labels.days}
+                </div>
               </div>
             </div>
             <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-background border border-primary/40 flex items-center justify-center">
@@ -24,9 +26,13 @@ export function Guarantee() {
             </div>
           </div>
           <div className="relative">
-            <span className="text-xs uppercase tracking-[0.3em] text-brand-orange font-semibold">{guarantee.eyebrow}</span>
+            <span className="text-xs uppercase tracking-[0.3em] text-brand-orange font-semibold">
+              {guarantee.eyebrow}
+            </span>
             <h2 className="mt-3 text-3xl md:text-4xl font-bold">{guarantee.title}</h2>
-            <p className="mt-4 text-muted-foreground leading-relaxed text-lg">{guarantee.description}</p>
+            <p className="mt-4 text-muted-foreground leading-relaxed text-lg">
+              {guarantee.description}
+            </p>
             <div className="mt-6 flex items-center gap-4 text-sm text-muted-foreground">
               <span className="flex items-center gap-2">
                 <Shield size={16} className="text-brand-orange" />

@@ -12,7 +12,13 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-6">
           {footer.socialLinks.map((link) => (
-            <a key={link.label} href={link.href} target="_blank" rel="noreferrer" className="hover:text-brand-orange transition">
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-brand-orange transition"
+            >
               {link.label}
             </a>
           ))}

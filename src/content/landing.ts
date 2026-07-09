@@ -63,7 +63,7 @@ export const landingContent = {
     paragraphs: [
       "Durante muito tempo eu também me senti perdido quando o assunto era S-Log.",
       "Eu assistia vídeos, lia fóruns, testava configurações e percebia uma coisa curiosa:",
-      "Todo mundo ensinava o \"como\". Pouca gente explicava o \"porquê\".",
+      'Todo mundo ensinava o "como". Pouca gente explicava o "porquê".',
       "Ninguém parecia explicar a lógica por trás dessas decisões. E quando você não entende a lógica, qualquer situação diferente vira um problema.",
       "Foi depois de anos utilizando câmeras Sony em trabalhos reais que eu percebi que dominar o S-Log não tem a ver com decorar números.",
       "Tem a ver com entender como a câmera pensa.",
@@ -77,7 +77,7 @@ export const landingContent = {
       "o que o ISO Base realmente faz,",
       "e como interpretar corretamente a imagem,",
     ],
-    quote: "Todo mundo ensinava o \"como\". Pouca gente explicava o \"porquê\".",
+    quote: 'Todo mundo ensinava o "como". Pouca gente explicava o "porquê".',
     takeaway: "Tem a ver com entender como a câmera pensa.",
     conclusion: "o S-Log deixa de ser um mistério.",
   },
@@ -109,12 +109,36 @@ export const landingContent = {
     highlight: "no canal",
     description: "Comentários reais de quem acompanha minhas imagens e correção de cor.",
     comments: [
-      { name: "@filmmaker.br", role: "Filmmaker", text: "Cara, que correção de cor absurda. Que imagem linda!" },
-      { name: "@joao.video", role: "Videomaker", text: "Sempre que vejo seus vídeos fico inspirado. A qualidade da imagem é outro nível." },
-      { name: "@cinemastudio", role: "Estúdio", text: "Suas configurações de S-Log são as melhores que já vi na internet. Salvou meu projeto!" },
-      { name: "@luca.audiovisual", role: "Audiovisual", text: "Aprendi mais em 1 vídeo seu do que em meses pesquisando. Obrigado pelo conteúdo." },
-      { name: "@rafa.creator", role: "Creator", text: "A cor do seu material é cinematográfica de verdade. Onde aprendeu?" },
-      { name: "@marcos.shots", role: "Fotógrafo", text: "Comecei a entender S-Log depois de assistir você. Didática perfeita." },
+      {
+        name: "@filmmaker.br",
+        role: "Filmmaker",
+        text: "Cara, que correção de cor absurda. Que imagem linda!",
+      },
+      {
+        name: "@joao.video",
+        role: "Videomaker",
+        text: "Sempre que vejo seus vídeos fico inspirado. A qualidade da imagem é outro nível.",
+      },
+      {
+        name: "@cinemastudio",
+        role: "Estúdio",
+        text: "Suas configurações de S-Log são as melhores que já vi na internet. Salvou meu projeto!",
+      },
+      {
+        name: "@luca.audiovisual",
+        role: "Audiovisual",
+        text: "Aprendi mais em 1 vídeo seu do que em meses pesquisando. Obrigado pelo conteúdo.",
+      },
+      {
+        name: "@rafa.creator",
+        role: "Creator",
+        text: "A cor do seu material é cinematográfica de verdade. Onde aprendeu?",
+      },
+      {
+        name: "@marcos.shots",
+        role: "Fotógrafo",
+        text: "Comecei a entender S-Log depois de assistir você. Didática perfeita.",
+      },
     ],
   },
   course: {
@@ -122,11 +146,31 @@ export const landingContent = {
     title: "O que tem no curso",
     description: "6 módulos práticos para você dominar o S-Log do zero ao avançado.",
     modules: [
-      { n: "01", t: "Entendendo o S-Log", d: "Curva Log, sensor, ISO Base e a lógica por trás de tudo." },
-      { n: "02", t: "Configurando a câmera do ZERO", d: "Passo a passo de todos os ajustes essenciais." },
-      { n: "03", t: "Exposição em S-Log", d: "Como expor com segurança usando ferramentas da própria câmera." },
-      { n: "04", t: "Gravando na prática", d: "Cenários reais de filmagem com decisões em tempo real." },
-      { n: "05", t: "Do S-Log ao vídeo final", d: "Fluxo completo no Adobe Premiere com transformação de cor." },
+      {
+        n: "01",
+        t: "Entendendo o S-Log",
+        d: "Curva Log, sensor, ISO Base e a lógica por trás de tudo.",
+      },
+      {
+        n: "02",
+        t: "Configurando a câmera do ZERO",
+        d: "Passo a passo de todos os ajustes essenciais.",
+      },
+      {
+        n: "03",
+        t: "Exposição em S-Log",
+        d: "Como expor com segurança usando ferramentas da própria câmera.",
+      },
+      {
+        n: "04",
+        t: "Gravando na prática",
+        d: "Cenários reais de filmagem com decisões em tempo real.",
+      },
+      {
+        n: "05",
+        t: "Do S-Log ao vídeo final",
+        d: "Fluxo completo no Adobe Premiere com transformação de cor.",
+      },
       { n: "06", t: "O jogo avançado", d: "Técnicas avançadas para refinar imagem e workflow." },
     ],
   },
@@ -138,19 +182,22 @@ export const landingContent = {
       {
         tag: "BÔNUS EXCLUSIVO",
         title: "LUTs do Capitão",
-        description: "Pacote de LUTs criados por mim para acelerar seu fluxo de cor em S-Log. Aplicáveis nos seus próprios projetos.",
+        description:
+          "Pacote de LUTs criados por mim para acelerar seu fluxo de cor em S-Log. Aplicáveis nos seus próprios projetos.",
         highlight: true,
       },
       {
         tag: "BÔNUS",
         title: "Atualizações Futuras",
-        description: "Todas as atualizações e novos conteúdos do curso serão disponibilizados sem nenhum custo adicional.",
+        description:
+          "Todas as atualizações e novos conteúdos do curso serão disponibilizados sem nenhum custo adicional.",
         highlight: false,
       },
       {
         tag: "BÔNUS",
         title: "Acesso Multiplataforma",
-        description: "Assista no computador, tablet ou celular. Acesso imediato após a confirmação da compra.",
+        description:
+          "Assista no computador, tablet ou celular. Acesso imediato após a confirmação da compra.",
         highlight: false,
       },
     ],

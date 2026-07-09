@@ -28,7 +28,9 @@ export function Offer() {
           <div className="relative p-10 md:p-14">
             <div className="flex items-center justify-center gap-3 mb-2">
               <BadgeCheck size={18} className="text-brand-orange" />
-              <span className="text-xs uppercase tracking-widest text-brand-orange font-semibold">{offer.badge}</span>
+              <span className="text-xs uppercase tracking-widest text-brand-orange font-semibold">
+                {offer.badge}
+              </span>
             </div>
             <div className="text-sm text-muted-foreground line-through">
               De <span className="text-foreground/60">{offer.originalPrice}</span>
@@ -39,7 +41,9 @@ export function Offer() {
             <div className="mt-2 inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-brand-orange">
               {offer.installment}
             </div>
-            <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{offer.note}</div>
+            <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
+              {offer.note}
+            </div>
             <ul className="mt-10 max-w-md mx-auto space-y-3 text-left">
               {offer.includes.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm">
@@ -64,7 +68,10 @@ export function Offer() {
               {offer.paymentMethods.map((method) => {
                 const Icon = iconMap[method.icon];
                 return (
-                  <span key={method.label} className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-card/50">
+                  <span
+                    key={method.label}
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-card/50"
+                  >
                     <Icon size={12} /> {method.label}
                   </span>
                 );

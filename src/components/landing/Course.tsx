@@ -7,7 +7,9 @@ export function Course() {
     <section id="curso" className="relative py-16 md:py-20 px-6 bg-card/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="text-xs uppercase tracking-[0.3em] text-brand-orange">{course.eyebrow}</span>
+          <span className="text-xs uppercase tracking-[0.3em] text-brand-orange">
+            {course.eyebrow}
+          </span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">{course.title}</h2>
           <p className="mt-4 text-muted-foreground">{course.description}</p>
         </div>

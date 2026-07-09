@@ -14,7 +14,9 @@ export function Problem() {
     <section id="problema" className="relative py-16 md:py-20 px-6 bg-card/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <span className="text-xs uppercase tracking-[0.3em] text-brand-orange">{problem.eyebrow}</span>
+          <span className="text-xs uppercase tracking-[0.3em] text-brand-orange">
+            {problem.eyebrow}
+          </span>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">{problem.title}</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-5">
@@ -29,8 +31,12 @@ export function Problem() {
                   <Icon size={24} strokeWidth={1.5} />
                 </div>
                 <div className="text-xs uppercase tracking-[0.25em] text-brand-orange">{p.tag}</div>
-                <h3 className="mt-2 text-lg font-semibold text-foreground leading-snug">{p.title}</h3>
-                <p className="mt-3 text-muted-foreground text-sm leading-relaxed">{p.description}</p>
+                <h3 className="mt-2 text-lg font-semibold text-foreground leading-snug">
+                  {p.title}
+                </h3>
+                <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
+                  {p.description}
+                </p>
               </div>
             );
           })}

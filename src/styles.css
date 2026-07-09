@@ -66,16 +66,16 @@
   /* Brand: black #040404, off-white #EDEDE0, orange #F16E3F, greens #325841 / #264231 */
   --background: oklch(0.07 0.005 0);
   --foreground: oklch(0.94 0.012 95);
-  --card: oklch(0.10 0.008 30);
+  --card: oklch(0.1 0.008 30);
   --card-foreground: oklch(0.94 0.012 95);
-  --popover: oklch(0.10 0.008 30);
+  --popover: oklch(0.1 0.008 30);
   --popover-foreground: oklch(0.94 0.012 95);
   --primary: oklch(0.68 0.17 42); /* laranja #F16E3F */
-  --primary-foreground: oklch(0.10 0.01 30);
+  --primary-foreground: oklch(0.1 0.01 30);
   --secondary: oklch(0.42 0.06 155); /* verde escuro #325841 */
   --secondary-foreground: oklch(0.94 0.012 95);
   --muted: oklch(0.16 0.008 30);
-  --muted-foreground: oklch(0.70 0.01 95);
+  --muted-foreground: oklch(0.7 0.01 95);
   --accent: oklch(0.35 0.055 155); /* verde profundo #264231 */
   --accent-foreground: oklch(0.94 0.012 95);
   --destructive: oklch(0.62 0.22 27);
@@ -91,7 +91,10 @@
   --brand-green-deep: oklch(0.35 0.055 155);
   --brand-offwhite: oklch(0.94 0.012 95);
 
-  --gradient-hero: radial-gradient(ellipse 80% 60% at 20% 30%, oklch(0.35 0.12 42 / 0.45), transparent 60%), radial-gradient(ellipse 60% 50% at 90% 80%, oklch(0.35 0.055 155 / 0.35), transparent 60%), linear-gradient(180deg, oklch(0.06 0.005 0), oklch(0.08 0.008 30));
+  --gradient-hero:
+    radial-gradient(ellipse 80% 60% at 20% 30%, oklch(0.35 0.12 42 / 0.45), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 80%, oklch(0.35 0.055 155 / 0.35), transparent 60%),
+    linear-gradient(180deg, oklch(0.06 0.005 0), oklch(0.08 0.008 30));
   --gradient-orange: linear-gradient(135deg, oklch(0.72 0.17 42), oklch(0.62 0.19 35));
   --gradient-fade: linear-gradient(180deg, transparent, oklch(0.07 0.005 0));
 
@@ -156,27 +159,43 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4 {
-    font-family: 'Space Grotesk', 'Inter', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Space Grotesk", "Inter", sans-serif;
     letter-spacing: -0.02em;
   }
 }
 
 @layer utilities {
-  .bg-hero { background: var(--gradient-hero); }
-  .bg-orange-gradient { background: var(--gradient-orange); }
-  .bg-fade-bottom { background: var(--gradient-fade); }
-  .shadow-glow { box-shadow: var(--shadow-glow); }
-  .shadow-card { box-shadow: var(--shadow-card); }
-  .text-brand-orange { color: var(--brand-orange); }
+  .bg-hero {
+    background: var(--gradient-hero);
+  }
+  .bg-orange-gradient {
+    background: var(--gradient-orange);
+  }
+  .bg-fade-bottom {
+    background: var(--gradient-fade);
+  }
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .text-brand-orange {
+    color: var(--brand-orange);
+  }
 
   .grain::before {
     content: "";
-    position: absolute; inset: 0;
+    position: absolute;
+    inset: 0;
     background-image: radial-gradient(oklch(1 0 0 / 0.04) 1px, transparent 1px);
     background-size: 3px 3px;
     pointer-events: none;
@@ -184,21 +203,46 @@
   }
 
   @keyframes fade-up {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  .animate-fade-up { animation: fade-up 0.8s ease-out both; }
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out both;
+  }
 
   @keyframes scan {
-    0% { transform: translateY(-100%); opacity: 0; }
-    50% { opacity: 1; }
-    100% { transform: translateY(100%); opacity: 0; }
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
   }
-  .animate-scan { animation: scan 6s linear infinite; }
+  .animate-scan {
+    animation: scan 6s linear infinite;
+  }
 
   @keyframes pulse-glow {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 0.8; }
+    0%,
+    100% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
   }
-  .animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
+  .animate-pulse-glow {
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
 }

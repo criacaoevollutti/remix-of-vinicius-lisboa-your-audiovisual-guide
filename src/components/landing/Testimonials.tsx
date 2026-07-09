@@ -14,7 +14,9 @@ export function Testimonials() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-orange/30 bg-brand-orange/5 backdrop-blur-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
-            <span className="text-[11px] uppercase tracking-[0.3em] text-brand-orange font-medium">{testimonials.eyebrow}</span>
+            <span className="text-[11px] uppercase tracking-[0.3em] text-brand-orange font-medium">
+              {testimonials.eyebrow}
+            </span>
           </div>
           <h2 className="mt-5 text-4xl md:text-6xl font-bold tracking-tight">
             {testimonials.title[0]}
@@ -33,7 +35,10 @@ export function Testimonials() {
               style={{ transform: i % 2 === 1 ? "translateY(12px)" : undefined }}
             >
               <div className="relative h-full p-7 rounded-2xl bg-card/80 backdrop-blur-xl overflow-hidden">
-                <div aria-hidden className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-brand-orange/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div
+                  aria-hidden
+                  className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-brand-orange/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                />
 
                 <div className="relative flex items-center justify-between mb-5">
                   <div className="flex items-center gap-3">
@@ -43,20 +48,29 @@ export function Testimonials() {
                       </div>
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-foreground leading-tight">{c.name}</div>
+                      <div className="text-sm font-semibold text-foreground leading-tight">
+                        {c.name}
+                      </div>
                       <div className="text-[11px] text-muted-foreground">{c.role}</div>
                     </div>
                   </div>
-                  <Quote size={28} className="text-brand-orange/30 group-hover:text-brand-orange/70 transition-colors" />
+                  <Quote
+                    size={28}
+                    className="text-brand-orange/30 group-hover:text-brand-orange/70 transition-colors"
+                  />
                 </div>
 
-                <p className="relative text-foreground/90 leading-relaxed">&ldquo;{c.text}&rdquo;</p>
+                <p className="relative text-foreground/90 leading-relaxed">
+                  &ldquo;{c.text}&rdquo;
+                </p>
 
                 <div className="relative mt-5 pt-4 border-t border-border/50 flex items-center gap-1">
                   {Array.from({ length: 5 }).map((_, idx) => (
                     <Star key={idx} size={14} className="fill-brand-orange text-brand-orange" />
                   ))}
-                  <span className="ml-auto text-[11px] uppercase tracking-widest text-muted-foreground">Verificado</span>
+                  <span className="ml-auto text-[11px] uppercase tracking-widest text-muted-foreground">
+                    Verificado
+                  </span>
                 </div>
               </div>
             </div>
