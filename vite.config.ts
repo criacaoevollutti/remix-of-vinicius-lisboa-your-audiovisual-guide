@@ -9,20 +9,9 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
     server: { entry: "server" },
   },
   // Outside Lovable builds (e.g. Netlify CI), target the Netlify preset instead
   // of the default Cloudflare one so the SSR handler deploys as a Netlify Function.
-  // Outside Lovable builds (e.g. Netlify CI), target the Netlify preset instead
-  // of the default Cloudflare one so the SSR handler deploys as a Netlify Function.
-  nitro: process.env.NETLIFY
-    ? {
-        preset: "netlify",
-        output: {
-          dir: "dist",
-          serverDir: "dist/.netlify/functions-internal/server",
-          publicDir: "dist/public",
-        },
-      }
-    : undefined,
+  nitro: process.env.NETLIFY ? { preset: "netlify" } : undefined,
+});
