@@ -73,17 +73,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Vinicus Lisboa" },
-      { name: "description", content: "Vinicius Lisboa HD offers a strategic landing page for filmmakers to learn and grow in the audiovisual industry." },
+      {
+        name: "description",
+        content:
+          "Vinicius Lisboa HD offers a strategic landing page for filmmakers to learn and grow in the audiovisual industry.",
+      },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Vinicus Lisboa" },
-      { property: "og:description", content: "Vinicius Lisboa HD offers a strategic landing page for filmmakers to learn and grow in the audiovisual industry." },
+      {
+        property: "og:description",
+        content:
+          "Vinicius Lisboa HD offers a strategic landing page for filmmakers to learn and grow in the audiovisual industry.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Vinicus Lisboa" },
-      { name: "twitter:description", content: "Vinicius Lisboa HD offers a strategic landing page for filmmakers to learn and grow in the audiovisual industry." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b984d298-2723-4115-8850-4c4f312e0071/id-preview-b6c66316--c69d49e4-f92f-43cd-8b1d-c16edde7f067.lovable.app-1781663015476.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b984d298-2723-4115-8850-4c4f312e0071/id-preview-b6c66316--c69d49e4-f92f-43cd-8b1d-c16edde7f067.lovable.app-1781663015476.png" },
+      {
+        name: "twitter:description",
+        content:
+          "Vinicius Lisboa HD offers a strategic landing page for filmmakers to learn and grow in the audiovisual industry.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b984d298-2723-4115-8850-4c4f312e0071/id-preview-b6c66316--c69d49e4-f92f-43cd-8b1d-c16edde7f067.lovable.app-1781663015476.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b984d298-2723-4115-8850-4c4f312e0071/id-preview-b6c66316--c69d49e4-f92f-43cd-8b1d-c16edde7f067.lovable.app-1781663015476.png",
+      },
     ],
     links: [
       {
@@ -92,7 +112,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
