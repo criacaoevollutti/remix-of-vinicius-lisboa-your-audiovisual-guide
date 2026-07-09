@@ -1,5 +1,5 @@
 import { landingContent } from "@/content/landing";
-import logoAsset from "@/assets/vinicius-lisboa-logo.png.asset.json";
+import logoUrl from "@/assets/vinicius-lisboa-logo.png";
 
 export function Nav() {
   const { nav, brand } = landingContent;
