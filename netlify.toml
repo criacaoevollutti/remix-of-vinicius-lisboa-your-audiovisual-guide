@@ -1,13 +1,12 @@
 ### Netlify configuration for TanStack Start (SSR via Nitro)
 #
 # The `netlify` Nitro preset is activated in vite.config.ts when the NETLIFY
-# env var is set. Nitro emits the SSR handler at
-# `.netlify/functions-internal/server` and the client build lands in
-# `dist/client` — we publish that folder so the hashed CSS/JS assets resolve.
+# env var is set. Nitro's Netlify preset emits the deployable public output in
+# `dist`, while the SSR handler is generated under `.netlify/functions-internal`.
 
 [build]
   command = "bun run build"
-  publish = "dist/client"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
