@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/vinicius-lisboa-logo.png.asset.json";
+import logoUrl from "@/assets/vinicius-lisboa-logo.png";
 import { landingContent } from "@/content/landing";
 
 export function Footer() {
