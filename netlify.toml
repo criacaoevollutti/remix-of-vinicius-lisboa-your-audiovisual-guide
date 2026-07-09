@@ -1,0 +1,25 @@
+### Netlify configuration for TanStack Start (SSR via Nitro)
+#
+# This project uses TanStack Start with server-side rendering.
+# Nitro (the underlying server engine) supports Netlify Functions as a deploy target.
+#
+# To deploy on Netlify:
+# 1. Push this repo to GitHub (Lovable + → GitHub → Connect project).
+# 2. In Netlify: "Add new site" → "Import an existing project" → pick this repo.
+# 3. Netlify will auto-detect the build command and publish dir below.
+# 4. Add any environment variables (VITE_*, secrets) in Site settings → Environment.
+
+[build]
+  command = "NITRO_PRESET=netlify bun run build"
+  publish = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SSR handler: forward all requests not matched by a static asset
+# to the Nitro-generated Netlify function.
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
+  force = false
