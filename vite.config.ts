@@ -14,5 +14,15 @@ export default defineConfig({
   },
   // Outside Lovable builds (e.g. Netlify CI), target the Netlify preset instead
   // of the default Cloudflare one so the SSR handler deploys as a Netlify Function.
-  nitro: process.env.NETLIFY ? { preset: "netlify" } : undefined,
-});
+  // Outside Lovable builds (e.g. Netlify CI), target the Netlify preset instead
+  // of the default Cloudflare one so the SSR handler deploys as a Netlify Function.
+  nitro: process.env.NETLIFY
+    ? {
+        preset: "netlify",
+        output: {
+          dir: "dist",
+          serverDir: "dist/.netlify/functions-internal/server",
+          publicDir: "dist/public",
+        },
+      }
+    : undefined,
