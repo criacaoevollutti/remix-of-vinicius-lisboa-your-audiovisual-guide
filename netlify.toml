@@ -1,12 +1,12 @@
 ### Netlify configuration for TanStack Start (SSR via Nitro)
 #
-# The `netlify` Nitro preset (activated in vite.config.ts when the NETLIFY
-# env var is set) generates the Netlify Function and static assets in the
-# right layout automatically. We only need to tell Netlify how to build.
+# The `netlify` Nitro preset is activated in vite.config.ts when the NETLIFY
+# env var is set (Netlify sets it automatically). Nitro emits the Netlify
+# Function and static assets in the layout Netlify auto-detects, so we don't
+# hard-code publish/redirects here.
 
 [build]
   command = "bun run build"
-  publish = "dist/public"
 
 [build.environment]
   NODE_VERSION = "20"
