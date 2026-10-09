@@ -1,4 +1,9 @@
 export const landingContent = {
+  checkout: {
+    href: "https://go.hotmart.com/Q106134789L",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
   brand: {
     name: "Vinicius Lisboa HD",
     logoAlt: "Vinicius Lisboa Filmmaker",

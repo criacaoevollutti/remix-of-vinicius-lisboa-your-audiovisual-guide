@@ -41,7 +41,7 @@ export function Hero() {
 
         <div className="mt-10">
           <a
-            href="#oferta"
+            {...landingContent.checkout}
             className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-orange-gradient text-primary-foreground font-semibold text-lg shadow-glow hover:scale-[1.02] transition"
           >
             {hero.cta}

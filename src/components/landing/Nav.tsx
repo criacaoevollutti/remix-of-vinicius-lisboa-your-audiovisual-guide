@@ -18,7 +18,7 @@ export function Nav() {
           ))}
         </nav>
         <a
-          href="#oferta"
+          {...landingContent.checkout}
           className="text-sm font-medium px-4 py-2 rounded-md bg-orange-gradient text-primary-foreground hover:opacity-90 transition shadow-glow"
         >
           {nav.cta}
