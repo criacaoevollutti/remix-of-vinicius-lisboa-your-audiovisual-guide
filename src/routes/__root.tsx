@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  type ErrorComponentProps,
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
@@ -32,7 +33,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
 
@@ -93,16 +94,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         name: "twitter:description",
         content:
           "Vinicius Lisboa HD offers a strategic landing page for filmmakers to learn and grow in the audiovisual industry.",
-      },
-      {
-        property: "og:image",
-        content:
-          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b984d298-2723-4115-8850-4c4f312e0071/id-preview-b6c66316--c69d49e4-f92f-43cd-8b1d-c16edde7f067.lovable.app-1781663015476.png",
-      },
-      {
-        name: "twitter:image",
-        content:
-          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b984d298-2723-4115-8850-4c4f312e0071/id-preview-b6c66316--c69d49e4-f92f-43cd-8b1d-c16edde7f067.lovable.app-1781663015476.png",
       },
     ],
     links: [
