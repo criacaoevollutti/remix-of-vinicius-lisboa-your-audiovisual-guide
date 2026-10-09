@@ -57,7 +57,7 @@ export function Offer() {
             <div className="mt-10 relative inline-block">
               <div className="absolute -inset-1 bg-orange-gradient rounded-xl blur opacity-75 animate-pulse" />
               <a
-                href="#"
+                {...landingContent.checkout}
                 className="relative inline-flex items-center gap-3 px-12 py-5 rounded-xl bg-orange-gradient text-primary-foreground font-bold text-xl shadow-glow hover:scale-[1.03] transition animate-pulse-glow"
               >
                 <Zap size={22} className="fill-current" />

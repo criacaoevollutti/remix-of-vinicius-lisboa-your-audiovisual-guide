@@ -21,6 +21,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: landingContent.meta.description },
       { property: "og:title", content: landingContent.meta.ogTitle },
       { property: "og:description", content: landingContent.meta.ogDescription },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,

@@ -49,7 +49,7 @@ export function FAQ() {
           <div className="relative inline-block">
             <div className="absolute -inset-1 bg-orange-gradient rounded-xl blur opacity-60 animate-pulse" />
             <a
-              href="#oferta"
+              {...landingContent.checkout}
               className="relative inline-flex items-center gap-3 px-10 py-5 rounded-xl bg-orange-gradient text-primary-foreground font-bold text-lg shadow-glow hover:scale-[1.03] transition animate-pulse-glow"
             >
               {faq.closingCta} <ArrowRight size={20} className="animate-bounce" />
